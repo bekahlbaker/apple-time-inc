@@ -1,0 +1,155 @@
+// ------------------------------------------------------------
+// Home
+//
+// Styling for the Home page
+// ------------------------------------------------------------
+
+.home{
+	.hero-container{
+		background: url('../img/zigzag.png');
+		padding-bottom: 40px;
+		padding-top: 60px;
+		.hero{
+			.bx-controls-direction{
+				color: #999;
+				font-size: 4em;
+				font-weight: bold;
+				position: relative;
+				top: -375px;
+
+				@media(max-width: $screen-xs-max){
+					display: none;
+				}
+			}
+
+			.bx-prev{
+				left: 10px;
+				position: absolute;
+			}
+			.bx-next{
+				right: 10px;
+				position: absolute;
+			}
+			h1{
+				color: white;
+				margin-bottom: 40px;
+				text-align: center;
+			}
+			.slider-image{
+				display: block;
+				height: 325px; 
+				margin: 0 auto;
+				width: 80%; 
+
+				@media(max-width: $screen-xs-max){
+					width: 100%;
+				}
+			}
+			.hero-cta{
+				@include horizontal-center-element();
+
+			}
+		}
+	}
+
+	.product-categories{
+		 h3{
+		 	font-size: 1.2em;
+			height: 50px;
+			overflow: hidden;
+			margin-bottom: 5px;
+		}
+		p{
+			font-size: .75em;
+			height: 70px;
+			overflow: hidden;
+		}
+	}
+
+	.category-carousel{
+		a{
+			color: $black;
+			text-align: center;
+
+			h3{
+				font-weight: bold;
+			}
+		}
+
+		.category-link{
+			@include horizontal-center-element();
+			width: 80%;
+
+			@media(max-width: $screen-xs-max){
+				width: 100%;
+			}
+		}
+	
+		.bx-controls-direction{
+			font-size: 4em;
+			font-weight: bold;
+			position: relative;
+			top: -300px;
+
+			@media(max-width: $screen-xs-max){
+				display: none;
+			}
+		}
+
+		.bx-prev{
+			left: -40px;
+			position: absolute;
+		}
+		.bx-next{
+			right: -40px;
+			position: absolute;
+		}
+	}
+	.other-links{
+		background: $yellow;
+		padding-bottom: 60px;
+		padding-top: 60px;
+		text-align: center;
+
+		.container{
+			div:nth-child(2){
+				border-left: 1px solid #999;
+				border-right: 1px solid #999;
+			}
+		}
+
+		.copy-container{
+			height: 250px;
+			overflow: hidden;
+
+			@media(max-width: $screen-xs-max){
+				height: 175px;
+			}
+		}
+
+		h2{
+			color: $black;
+			font-weight: 900;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+		}
+		p{
+			color: #666;
+			line-height: 25px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			width: 80%;
+		}
+		.button{
+			background: $white !important;
+			border: 1px solid $black;
+			color: $black;
+			margin-bottom: 20px;
+
+			&:hover{
+				background: $black !important;
+				color: $white !important;
+			}
+		}
+	}
+}

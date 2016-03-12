@@ -1,0 +1,127 @@
+.single {
+padding: 0;
+
+	div.ppt{
+	display: none!important;
+}
+
+.description{
+width: 400px;
+}
+	#content {
+		height: 120px;
+		background: url('../img/zigzag.png');
+		
+	}
+
+
+	.entry-summary {
+		padding-top: 50px;
+
+				@media(max-width: $screen-sm-min){
+			margin-left: 30px;
+		}
+
+			h1 {
+				text-align: left!important;
+				font-family: $heading-font;
+				font-weight: 700;
+				font-size: 2em;
+				margin: 0;
+			}
+	}
+
+	.product_meta {
+		text-align: left;
+		width: 400px;
+
+			span {
+				font-weight: 700;
+					}
+
+			ul {
+				list-style: none;
+				display: inline;
+			}
+
+			li {
+				font-family: $body-font;
+				font-size: 1em;
+				font-weight: 400;
+			}
+
+			p {
+				font-family: $body-font;
+				font-size: 1em;
+				font-weight: 400;
+			}
+
+
+
+			a {
+				color: $black!important;
+			}
+
+	}
+
+	.images {
+		margin-top: 50px;
+		padding-left: 50px;
+	}
+
+
+	.related {
+		clear: both;
+			h2{
+				font-size: 2em;
+				margin-top: 40px;
+				margin-bottom: 40px;
+			}
+
+		li{
+		border: 1px solid $black;
+		text-transform: uppercase;
+		:hover{
+			text-decoration: underline;
+		}
+
+		h3 {
+			color: $black;
+			height: 50px;
+			overflow: hidden;
+			text-align: center;
+			font-family: $body-font;
+			font-size: 1.2em;
+			font-weight: 700;
+		}
+		}
+
+		.button.product_type_simple{
+		@include horizontal-center-element();
+		margin-bottom: 30px;
+		}
+
+			
+
+	}
+
+	hr {
+		color: $black;
+		clear: both;
+		height: 2px;
+	}
+
+	#reviews {
+		display: none!important;
+	}
+
+	.wc-tabs-wrapper {
+		display: none!important;
+	}
+
+	.footer {
+	
+	}
+
+
+}

@@ -1,0 +1,57 @@
+// ------------------------------------------------------------
+// Shop
+//
+// Styling for the Shop page
+// ------------------------------------------------------------
+
+.shop {
+
+	h1{
+		font-size: 2em;
+		padding-top: 30px;
+		margin-left: 30px;
+	}
+
+	.page-title {
+		padding-top: 25px;
+		padding-bottom: 15px;
+		margin: 0;
+	}
+
+	.container-shop-products {
+		padding-top: 70px;
+
+		li{
+		border: 1px solid $black;
+		text-transform: uppercase;
+		:hover{
+			text-decoration: underline;
+		}
+
+		h3 {
+			color: $black;
+			height: 50px;
+			overflow: hidden;
+			text-align: center;
+			font-family: $body-font;
+			font-size: 1.2em;
+			font-weight: 700;
+		}
+		}
+
+	}
+
+		.button.product_type_simple{
+		@include horizontal-center-element();
+		margin-bottom: 30px;
+		}
+
+		.woocommerce-pagination {
+			clear: both;
+			
+				.page-numbers{
+				color: $black!important;
+			}
+		}
+
+}

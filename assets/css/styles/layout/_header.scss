@@ -1,0 +1,206 @@
+// ------------------------------------------------------------
+// Header
+//
+// Global styling for the header.
+// ------------------------------------------------------------
+
+//
+// Header
+// --------------------------------------------------
+
+header{
+	.top-bar{
+		background: url('../img/zigzag.png');
+		height: $topbar-height-xs;
+
+		.container{
+			height: $topbar-height-xs;
+
+			.phone-number{
+				@include vertical-center-element();
+
+				color: white;
+				display: block;
+				font-weight: bold;
+
+			@media(max-width: $screen-md-min){
+				display: none;
+			}
+			}
+		}
+
+		@media(min-width: $screen-sm-min){
+			height: $topbar-height-sm-up;
+
+			.container{
+				height: $topbar-height-sm-up;
+			}
+		}
+	}
+
+	.navbar{
+		background: white;
+		border-bottom: 1px solid #eee;
+		height: 55px;
+		margin-top: $topbar-height-xs;
+
+		.container{
+			height: 55px;
+		}
+		
+		.nav-logo{
+			height: 100%;
+			position: relative;
+
+			a{
+				height: 100%;
+
+				img{
+					@include vertical-center-element();
+					height: 160px;
+					@media(max-width: $screen-md-min){
+						height: 140px;
+					}
+
+				}
+			}
+		}
+		
+		.nav-menu{
+			height: 100%;
+			.navbar-nav{
+				height: 100%;
+				margin-left: -50px;
+				@media (min-width: $screen-sm-min) and (max-width: $screen-md-min ){ 
+					margin-top: -50px;
+				}
+				@media (min-width: $screen-md-min) and (max-width: $screen-lg-min ){ 
+					margin-top: -106px;
+				}
+				@media(min-width: $screen-lg-min){
+					margin-top: -50px;
+					margin-left: 50px;
+					font-size: 1em;
+				}
+					:hover{
+						background-color: $white;
+						border-bottom: 3px solid $red;
+						display: table;
+					}
+
+				ul{
+					height: 100%;
+					}
+
+					a{
+						font-size: .9em;
+						color: $red;
+						font-weight: 900;
+						height: 100%;
+						text-transform: uppercase;
+				}
+			}
+		}
+
+		.navbar-form{
+			margin-left: 5px;
+			padding-right: 0;
+
+			.screen-reader-text{
+				display: none;
+			}
+		}
+		.yith-ajaxsearchform-container{
+			position: relative;
+		}
+		.autocomplete-suggestions{
+			right: 78px;
+			top: 44px;
+		}
+
+		.nav-toggle-container{
+			height: $navbar-height-xs;
+			@media(min-width: $screen-sm-min){
+				height: $navbar-height-sm-up;
+			}
+			.nav-toggle{
+				@include vertical-center-element();
+				cursor: pointer;
+				z-index: 10000;
+				@media(min-width: $screen-sm-min){
+					display: none;
+				}
+			}
+		}
+
+		@media(min-width: $screen-sm-min){
+			margin-top: $topbar-height-sm-up;
+		}
+	}
+}
+
+.mobile-menu{
+	background: white;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999999;
+
+	hr{
+		width: 100%;
+	}
+
+	.nav-logo{
+		img{
+			margin-left: 15px;
+			margin-top: 25px;
+			max-height: 90px;
+
+			@media(min-width: $screen-md-min){
+				max-height: 140px;
+			}
+		}
+	}
+
+	.close-button{
+		cursor: pointer;
+		font-size: 3em;
+		margin-right: 8px;
+		margin-top: 40px;
+	}
+
+	.navbar-nav{
+		display: table;
+		:hover{
+			background-color: $white;
+			border-bottom: 3px solid $yellow;
+			}
+		ul{
+			list-style-type: none;
+		}
+		a{
+			color: black;
+			font-weight: bold;
+		}
+	}
+
+	@media(min-width: $screen-md-min){
+		display: none !important;
+	}
+
+	span{
+		font-weight: 900;
+	}
+	.screen-reader-text{
+		display: none;
+	}
+	input[type="search"]{
+		@media(max-width: $screen-xs-max){
+			height: 50px;
+			margin-bottom: 10px;
+		}
+	}
+}

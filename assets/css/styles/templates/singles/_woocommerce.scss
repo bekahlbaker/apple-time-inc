@@ -1,0 +1,42 @@
+.woocommerce {
+
+
+	#content {
+		height: 120px;
+		background: url('../img/zigzag.png');
+		
+	}
+
+	padding-top: 100px;
+
+		.quote-list {
+		background-color: green!important;
+	}
+
+	.quote-content {
+		background-color: blue!important;
+	}
+}
+
+#container {
+
+	.woocommerce-breadcrumb {
+		padding-top: 70px;
+		padding-left: 6%;
+		font-weight: 400;
+		font-family: $heading-font;
+		font-size: 1em;
+		color: $white;
+
+			a {
+				color: $white;
+				text-decoration: underline!important;
+			}
+	}
+
+	.product .images img{
+		width: auto;
+		margin: auto;
+	}
+
+}

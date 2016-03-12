@@ -1,0 +1,102 @@
+// ------------------------------------------------------------
+// Footer
+//
+// Global styling for the footer.
+//
+// ------------------------------------------------------------
+
+//
+// Footer
+// --------------------------------------------------
+
+.footer {
+
+	bottom: 0;
+	clear: both!important;
+	width: 100%;
+
+
+		.site-map {
+			height: auto;
+			
+
+					h4 {
+						margin-top: 15px;
+						margin-bottom:15px; 
+						text-align: center;
+						color: $white;
+						font-weight: 700;
+						font-size: 1em;
+						font-family: $heading-font;
+						line-height: 35px;
+						background-color: $red;
+						height: 40px;
+						width: 250px;
+
+							@media (max-width: $screen-md-min){
+								width: 100%;
+							}
+						}
+				}
+
+
+		.bottom {
+			height: auto;
+			background-color: $black;
+			padding-bottom: 50px;
+
+			.help {
+				margin-top: 80px;
+				text-align: center;
+				color: $white;
+				font-size: 1em;
+				font-weight: 700;
+			}
+
+			.info {
+				margin-top: 25px;
+				text-align: center;
+				color: $white;
+				font-size: .9em;
+				font-weight: 400;
+			}
+
+			.menu {
+
+				a {
+					text-decoration: none!important;
+				}
+				margin-top: 60px;
+				margin-left: 200px;
+
+				@media(max-width: $screen-md-max){
+					margin: 0 auto;
+					margin-top: 50px;
+					text-align: center;
+					width: 150px;
+				}
+
+				li{
+				width: 150px;
+				text-align: center;
+				padding-top: 8px;
+				list-style: none;
+				color: $white;
+				font-weight: 400;
+				font-size: 1em;
+				letter-spacing: .75px;
+				}
+
+				:hover{
+					border-bottom: 3px solid $yellow;
+				}
+			}
+
+			.copyright {
+				margin-top: 60px;
+				text-align: center;
+				color: $white;
+				font-size: .75em;
+			}
+		}
+}

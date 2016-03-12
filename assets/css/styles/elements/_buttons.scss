@@ -1,0 +1,23 @@
+// ------------------------------------------------------------
+// 
+// Buttons
+// 
+// ------------------------------------------------------------
+
+.button{
+	background: $button-bg-color !important;
+	border: 1px solid $black;
+	color: $button-type-color !important;
+	display: inline-block;
+	font-family: $button-font;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 8px 12px;
+	text-align: center;
+
+	&:hover{
+		background: $button-border-color !important;
+		color: $button-hover-type !important;
+		text-decoration: none;
+	}
+}

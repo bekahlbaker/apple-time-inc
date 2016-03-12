@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------
+// Custom Variables
+//
+// Custom variables for use in this project only.
+// 
+//
+// FYI: 
+// These are imported at the bottom of the bootstrap/_variables.scss 
+// file so that these styles override Bootstrap.
+// -----------------------------------------------------------------
+
+
+
+//== Breakpoints
+//
+//## Points at which layout changes, responding to different devices.
+
+// Small screen / tablet
+$screen-sm-min:              768px !default;
+
+// Medium screen / desktop
+$screen-md-min:              992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min:              1200px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+
+//== Colors
+//
+//## Custom colors, specific to this project.
+
+$red:					#ED1B24;
+$yellow:				#FFC010;
+$white:					#FFFFFF;
+$black:					#222222;
+
+
+
+
+//== Links
+//
+//## Textual link variables
+$link-color:			$white;
+
+
+
+//== Buttons
+//
+//## Button Variables
+$button-border-color:	$black;
+$button-bg-color:		$yellow;
+$button-font:			'Lato';
+$button-type-color:		$black;
+$button-hover-type:		$yellow;
+
+
+//== Typography
+//
+//## Typography Variables
+$heading-font:			'Lato', sans-serif;
+$body-font:				'Lato', sans-serif;
+
+
+//== Navbar
+// 
+//## Navbar custom variables
+$navbar-height-xs: 		50px;
+$navbar-height-sm-up:	($navbar-height-xs + 30);
+
+//== Top Bar
+//## Top Bar custom variables
+$topbar-height-xs:		40px;
+$topbar-height-sm-up:	($topbar-height-xs + 15);

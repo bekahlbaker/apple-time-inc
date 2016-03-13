@@ -47,7 +47,7 @@ also change code in 'woocommerce/templates/content-single-product.php'-->
 					<h2>Need Help?</h2>
 					</div>
 						<div class="info">
-							<p>28096 TX-64, Canton, TX 75103</p>
+							<p>PO BOX 1210 Canton, TX 75103</p>
 							<p>903-567-7600</p>
 							<p>Order Toll Free: 1-800-835-9477 <br>or Sales@AppleTimeInc.com</p>
 						</div>

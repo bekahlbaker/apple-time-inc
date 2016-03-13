@@ -23,9 +23,9 @@
 	</div>
 	<div class="product-categories content-block container">
 		<div class="product-categories-card col-xs-12 col-md-4">
-			<h3 class="headline"><?php the_field('categories_headline'); ?></h>
+			<h3 class="headline"><?php the_field('categories_headline'); ?></h3>
 			<p class="copy"><?php the_field('categories_copy'); ?></p>
-			<a href="" class="button"><?php the_field('categories_button_text'); ?></a>
+			<a href="/shop" class="button"><?php the_field('categories_button_text'); ?></a>
 		</div>
 		<div class="category-carousel col-xs-12 col-md-8">	
 			<?php 
@@ -62,21 +62,21 @@
 			<div class="col-xs-12 col-sm-4">
 				<div class="copy-container">
 					<h2>Artwork</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nulla vel ad adipisci! Incidunt, cumque?</p>
+					<p><?php the_field('artwork_callout') ?></p>
 				</div>
 				<a href="artwork-and-logos" class="button">Learn More</a>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<div class="copy-container">
 					<h2>Contact Us</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis optio modi ab minus veritatis nesciunt eos, vitae error.</p>
+					<p><?php the_field('contact_us_callout') ?></p>
 				</div>
 				<a href="contact-us" class="button">Learn More</a>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<div class="copy-container">
 					<h2>Careers</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, iste, assumenda? Rem magnam et.</p>
+					<p><?php the_field('careers_callout') ?></p>
 				</div>
 				<a href="careers" class="button">Learn More</a>
 			</div>

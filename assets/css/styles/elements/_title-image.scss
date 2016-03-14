@@ -1,0 +1,8 @@
+.title_image{
+	max-height: 200px;
+	padding-bottom: 30px;
+
+	img{
+		@include horizontal-center-element();
+	}
+}

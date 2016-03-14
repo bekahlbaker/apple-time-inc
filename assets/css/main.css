@@ -160,6 +160,18 @@ textarea {
   resize: none;
 }
 
+.title_image {
+  max-height: 200px;
+  padding-bottom: 30px;
+}
+.title_image img {
+  left: 50%;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 header .top-bar {
   background: url("../img/zigzag.png");
   height: 40px;
@@ -458,19 +470,23 @@ header .navbar .nav-toggle-container .nav-toggle {
   height: 70px;
   overflow: hidden;
 }
-.home .product-categories .product-categories-card {
-  padding-top: 40px;
-  padding-left: 50px;
-  padding-bottom: 60px;
-}
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .home .product-categories .product-categories-card {
-    margin-left: 50px;
+    padding-bottom: 50px;
+    text-align: center;
   }
 }
 .home .product-categories .product-categories-card .product-categories-button {
-  margin-left: 50px;
   margin-top: 30px;
+}
+@media (min-width: 992px) {
+  .home .product-categories .product-categories-card .product-categories-button {
+    left: 50%;
+    position: relative;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
 .home .category-carousel a {
   color: #222222;
@@ -785,6 +801,9 @@ header .navbar .nav-toggle-container .nav-toggle {
 .careers {
   padding-top: 100px;
 }
+.careers .career a {
+  color: blue !important;
+}
 .careers h1 {
   padding-bottom: 30px;
   font-size: 2.3em;
@@ -824,6 +843,9 @@ header .navbar .nav-toggle-container .nav-toggle {
   height: 55px;
   overflow: hidden;
 }
+.artwork-and-logos .artwork a {
+  color: blue !important;
+}
 .artwork-and-logos .gallery p {
   font-weight: 400;
   font-size: 1em;
@@ -835,6 +857,9 @@ header .navbar .nav-toggle-container .nav-toggle {
 
 .about-us {
   padding-top: 100px;
+}
+.about-us .about a {
+  color: blue !important;
 }
 .about-us h1 {
   padding-bottom: 30px;
@@ -853,6 +878,9 @@ header .navbar .nav-toggle-container .nav-toggle {
 
 .contact-us {
   padding-top: 100px;
+}
+.contact-us .contact a {
+  color: blue !important;
 }
 .contact-us h1 {
   padding-bottom: 30px;

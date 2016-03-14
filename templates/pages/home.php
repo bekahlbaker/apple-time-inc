@@ -7,11 +7,11 @@
 		<hr>
 	</div>
 	<div class="product-categories content-block container">
-		<div class="product-categories-card col-xs-12 col-md-4">
+		<div class="product-categories-card col-sm-12 col-md-2">
 			<div class="container"><img src="<?php the_field('categories_copy'); ?>"></div>
 			<a href="/shop" class="button product-categories-button"><?php the_field('categories_button_text'); ?></a>
 		</div>
-		<div class="category-carousel col-xs-12 col-md-8">	
+		<div class="category-carousel col-sm-12 col-md-10">	
 			<?php 
 			$args = array(
 			    'number'     => $number,
@@ -30,7 +30,7 @@
 			    foreach ( $product_categories as $product_category ) {
 			    	$cat_thumb_id = get_woocommerce_term_meta( $product_category->term_id, 'thumbnail_id', true );
 					$cat_thumb_url = wp_get_attachment_thumb_url( $cat_thumb_id );
-			       	echo '<li><a href="' . get_term_link( $product_category ) . '"><div class="col-xs-12" style="height: 150px; background: url(\'' . $cat_thumb_url . '\'); background-repeat: no-repeat; background-size: cover;"></div><h3 class="col-xs-12 category-name">' . $product_category->name . '</h3><p class="col-xs-12 category-description">' . $product_category->description . '</p><a class="button category-link" href="'. get_term_link( $product_category ) .'">Learn More</a></li>';
+			       	echo '<li><a href="' . get_term_link( $product_category ) . '"><div class="col-xs-12" style="height: 150px; background: url(\'' . $cat_thumb_url . '\'); background-repeat: no-repeat; background-size: cover;"></div><h3 class="col-xs-12 category-name">' . $product_category->name . '</h3><a class="button category-link" href="'. get_term_link( $product_category ) .'">Learn More</a></li>';
 			        
 			     }
 			     echo "</ul>";

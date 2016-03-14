@@ -1,7 +1,15 @@
 <div class="artwork-and-logos">
 	<div class="container">
-		<h1><?php the_title(); ?></h1>
-		<?php the_content(); ?>
+
+		<div class="title_image">
+			<?php
+				if ( has_post_thumbnail() ) { the_post_thumbnail( 'full' ); }
+			?>
+		</div>
+		
+		<div class="artwork">
+			<?php the_content(); ?>
+		</div>
 
 		<?php if(have_rows('artwork_and_logos')) : ?>
 			<ul class="gallery row">

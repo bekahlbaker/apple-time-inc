@@ -1,21 +1,6 @@
 <div class="home">
-	<div class="hero-container">
-		<div class="hero content-block">
-			<?php if(have_rows('hero_slider')) : ?>
-				<ul id="homeHeroSlider" class="col-xs-12">
-					<?php while(have_rows('hero_slider')) : the_row(); ?>
-						<li>
-							<div class="slider-image" style="background: url('<?php the_sub_field('image'); ?>'); background-size: cover; background-repeat: no-repeat;" alt=""></div>
-							<div class="row">
-								<h1><?php the_sub_field('copy'); ?></h1>
-								<div class="col-sm-4 col-sm-offset-4">
-									<a href="<?php the_sub_field('button_link'); ?>" class="button hero-cta">Learn More</a>
-								</div>
-							</div>
-						</li>
-					<?php endwhile; ?>
-				</ul>
-			<?php endif; ?>
+	<div class="marquee container">
+		<h3><marquee>Welcome to AppleTimeInc.</marquee></h3>
 		</div>
 	</div>
 	<div class="container">
@@ -23,9 +8,8 @@
 	</div>
 	<div class="product-categories content-block container">
 		<div class="product-categories-card col-xs-12 col-md-4">
-			<h3 class="headline"><?php the_field('categories_headline'); ?></h3>
-			<p class="copy"><?php the_field('categories_copy'); ?></p>
-			<a href="/shop" class="button"><?php the_field('categories_button_text'); ?></a>
+			<div class="container"><img src="<?php the_field('categories_copy'); ?>"></div>
+			<a href="/shop" class="button product-categories-button"><?php the_field('categories_button_text'); ?></a>
 		</div>
 		<div class="category-carousel col-xs-12 col-md-8">	
 			<?php 
@@ -61,22 +45,19 @@
 		<div class="container">
 			<div class="col-xs-12 col-sm-4">
 				<div class="copy-container">
-					<h2>Artwork</h2>
-					<p><?php the_field('artwork_callout') ?></p>
+					<img src="<?php the_field('artwork_image'); ?>">
 				</div>
 				<a href="artwork-and-logos" class="button">Learn More</a>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<div class="copy-container">
-					<h2>Contact Us</h2>
-					<p><?php the_field('contact_us_callout') ?></p>
+					<img src="<?php the_field('contact_us_image'); ?>">
 				</div>
 				<a href="contact-us" class="button">Learn More</a>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<div class="copy-container">
-					<h2>Careers</h2>
-					<p><?php the_field('careers_callout') ?></p>
+					<img src="<?php the_field('careers_image'); ?>">
 				</div>
 				<a href="careers" class="button">Learn More</a>
 			</div>

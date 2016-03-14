@@ -5,51 +5,10 @@
 // ------------------------------------------------------------
 
 .home{
-	.hero-container{
-		background: url('../img/zigzag.png');
-		padding-bottom: 40px;
-		padding-top: 60px;
-		.hero{
-			.bx-controls-direction{
-				color: #999;
-				font-size: 4em;
-				font-weight: bold;
-				position: relative;
-				top: -375px;
+	margin-top: 10px;
 
-				@media(max-width: $screen-xs-max){
-					display: none;
-				}
-			}
+	.marquee{
 
-			.bx-prev{
-				left: 10px;
-				position: absolute;
-			}
-			.bx-next{
-				right: 10px;
-				position: absolute;
-			}
-			h1{
-				color: white;
-				margin-bottom: 40px;
-				text-align: center;
-			}
-			.slider-image{
-				display: block;
-				height: 325px; 
-				margin: 0 auto;
-				width: 80%; 
-
-				@media(max-width: $screen-xs-max){
-					width: 100%;
-				}
-			}
-			.hero-cta{
-				@include horizontal-center-element();
-
-			}
-		}
 	}
 
 	.product-categories{
@@ -63,6 +22,21 @@
 			font-size: .75em;
 			height: 70px;
 			overflow: hidden;
+		}
+		.product-categories-card{
+			padding-top: 40px;
+			padding-left: 50px;
+			padding-bottom: 60px;
+
+			@media(max-width: $screen-xs-max){
+				margin-left: 50px;
+			}
+
+			.product-categories-button{
+				margin-left: 50px;
+				margin-top: 30px;
+			}
+
 		}
 	}
 
@@ -107,8 +81,8 @@
 	}
 	.other-links{
 		background: $yellow;
-		padding-bottom: 60px;
-		padding-top: 60px;
+		padding-bottom: 20px;
+		padding-top: 30px;
 		text-align: center;
 
 		.container{
@@ -119,8 +93,8 @@
 		}
 
 		.copy-container{
-			height: 250px;
 			overflow: hidden;
+			padding-bottom: 20px;
 
 			@media(max-width: $screen-xs-max){
 				height: 175px;

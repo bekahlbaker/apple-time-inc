@@ -828,7 +828,8 @@ header .navbar .nav-toggle-container .nav-toggle {
 }
 .artwork-and-logos ul img {
   padding-top: 10px;
-  height: 200px;
+  max-height: 200px;
+  max-width: 200px;
   left: 50%;
   position: relative;
   -webkit-transform: translateX(-50%);

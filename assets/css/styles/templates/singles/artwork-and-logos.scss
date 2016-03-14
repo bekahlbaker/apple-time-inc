@@ -21,7 +21,8 @@
 
 	ul img{
 		padding-top: 10px;
-		height: 200px;
+		max-height: 200px;
+		max-width: 200px;
 		@include horizontal-center-element();
 	}
 

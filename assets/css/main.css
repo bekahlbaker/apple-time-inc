@@ -406,6 +406,9 @@ header .navbar .nav-toggle-container .nav-toggle {
   font-size: .9em;
   font-weight: 400;
 }
+.footer .bottom .info li {
+  list-style: none;
+}
 .footer .bottom .menu {
   margin-top: 60px;
   margin-left: 200px;
@@ -441,53 +444,8 @@ header .navbar .nav-toggle-container .nav-toggle {
   font-size: .75em;
 }
 
-.home .hero-container {
-  background: url("../img/zigzag.png");
-  padding-bottom: 40px;
-  padding-top: 60px;
-}
-.home .hero-container .hero .bx-controls-direction {
-  color: #999;
-  font-size: 4em;
-  font-weight: bold;
-  position: relative;
-  top: -375px;
-}
-@media (max-width: 767px) {
-  .home .hero-container .hero .bx-controls-direction {
-    display: none;
-  }
-}
-.home .hero-container .hero .bx-prev {
-  left: 10px;
-  position: absolute;
-}
-.home .hero-container .hero .bx-next {
-  right: 10px;
-  position: absolute;
-}
-.home .hero-container .hero h1 {
-  color: white;
-  margin-bottom: 40px;
-  text-align: center;
-}
-.home .hero-container .hero .slider-image {
-  display: block;
-  height: 325px;
-  margin: 0 auto;
-  width: 80%;
-}
-@media (max-width: 767px) {
-  .home .hero-container .hero .slider-image {
-    width: 100%;
-  }
-}
-.home .hero-container .hero .hero-cta {
-  left: 50%;
-  position: relative;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+.home {
+  margin-top: 10px;
 }
 .home .product-categories h3 {
   font-size: 1.2em;
@@ -499,6 +457,20 @@ header .navbar .nav-toggle-container .nav-toggle {
   font-size: .75em;
   height: 70px;
   overflow: hidden;
+}
+.home .product-categories .product-categories-card {
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .home .product-categories .product-categories-card {
+    margin-left: 50px;
+  }
+}
+.home .product-categories .product-categories-card .product-categories-button {
+  margin-left: 50px;
+  margin-top: 30px;
 }
 .home .category-carousel a {
   color: #222222;
@@ -541,8 +513,8 @@ header .navbar .nav-toggle-container .nav-toggle {
 }
 .home .other-links {
   background: #FFC010;
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding-bottom: 20px;
+  padding-top: 30px;
   text-align: center;
 }
 .home .other-links .container div:nth-child(2) {
@@ -550,8 +522,8 @@ header .navbar .nav-toggle-container .nav-toggle {
   border-right: 1px solid #999;
 }
 .home .other-links .copy-container {
-  height: 250px;
   overflow: hidden;
+  padding-bottom: 20px;
 }
 @media (max-width: 767px) {
   .home .other-links .copy-container {

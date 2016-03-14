@@ -47,9 +47,16 @@ also change code in 'woocommerce/templates/content-single-product.php'-->
 					<h2>Need Help?</h2>
 					</div>
 						<div class="info">
-							<p>PO BOX 1210 Canton, TX 75103</p>
-							<p>903-567-7600</p>
-							<p>Order Toll Free: 1-800-835-9477 <br>or Sales@AppleTimeInc.com</p>
+							<?php if(have_rows('footer_info', 'option') ) : ?>
+								<ul>
+									<?php while(have_rows('footer_info', 'option')) : the_row(); ?>
+										<li><?php the_sub_field('address'); ?></li>
+										<li><?php the_sub_field('phone_number'); ?></li>
+										<li><?php the_sub_field('toll_free'); ?></li>
+										<li><?php the_sub_field('email'); ?></li>
+									<?php endwhile; ?>
+								</ul>
+							<?php endif; ?>
 						</div>
 			</div>
 			<div class="col-md-6">

@@ -1,6 +1,6 @@
 <div class="home">
 	<div class="marquee container">
-		<h3><marquee>Welcome to AppleTimeInc.</marquee></h3>
+		<h6><marquee><?php the_field('marquee'); ?></marquee></h6>
 		</div>
 	</div>
 	<div class="container">

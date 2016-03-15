@@ -823,12 +823,12 @@ header .navbar .nav-toggle-container .nav-toggle {
   list-style: none;
 }
 .artwork-and-logos li {
-  padding: 15px;
   margin-top: 5px;
+  padding-top: 15px;
+  position: relative;
 }
 .artwork-and-logos ul img {
   padding-top: 10px;
-  max-height: 200px;
   max-width: 200px;
   left: 50%;
   position: relative;
@@ -841,7 +841,6 @@ header .navbar .nav-toggle-container .nav-toggle {
   text-align: center;
   font-size: 1.5em;
   font-weight: 700;
-  height: 55px;
   overflow: hidden;
 }
 .artwork-and-logos .artwork a {
@@ -850,7 +849,6 @@ header .navbar .nav-toggle-container .nav-toggle {
 .artwork-and-logos .gallery p {
   font-weight: 400;
   font-size: 1em;
-  height: 150px;
   overflow: hidden;
   width: 90%;
   margin: 0 auto;

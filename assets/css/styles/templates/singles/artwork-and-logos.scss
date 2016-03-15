@@ -15,13 +15,14 @@
 	}
 
 	li{
-			padding: 15px;
 			margin-top: 5px;
+			padding-top: 15px;
+			position: relative;
 		}
 
 	ul img{
 		padding-top: 10px;
-		height: 200px;
+		max-width: 200px;
 		@include horizontal-center-element();
 	}
 
@@ -30,14 +31,18 @@
 		text-align: center;
 		font-size: 1.5em;
 		font-weight: 700;
-		height: 55px;
 		overflow: hidden;
+	}
+
+	.artwork{
+		a{
+			color: blue!important;
+		}
 	}
 
 	.gallery p{
 		font-weight: 400;
 		font-size: 1em;
-		height: 150px;
 		overflow: hidden;
 		width: 90%;
 		margin: 0 auto;

@@ -1,6 +1,12 @@
 <div class="careers">
  <div class="container">
-		<h1><?php the_title(); ?></h1>
-			<?php the_content(); ?>
+				<div class="title_image">
+			<?php
+				if ( has_post_thumbnail() ) { the_post_thumbnail( 'full' ); }
+			?>
+		</div>
+			<div class="career">
+			 <?php the_content(); ?>
+			</div>
 	</div>
 </div>

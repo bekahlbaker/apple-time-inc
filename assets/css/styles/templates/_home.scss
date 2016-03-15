@@ -24,16 +24,18 @@
 			overflow: hidden;
 		}
 		.product-categories-card{
-			padding-top: 40px;
-			padding-left: 50px;
-			padding-bottom: 60px;
 
-			@media(max-width: $screen-xs-max){
-				margin-left: 50px;
+			@media(max-width: $screen-sm-max){
+				padding-bottom: 50px;
+				text-align: center;
 			}
 
 			.product-categories-button{
-				margin-left: 50px;
+				@media(min-width: $screen-md-min){
+					@include horizontal-center-element();
+
+				}
+
 				margin-top: 30px;
 			}
 

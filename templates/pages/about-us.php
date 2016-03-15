@@ -1,6 +1,12 @@
 <div class="about-us">
  <div class="container">
-		<h1><?php the_title(); ?></h1>
+				<div class="title_image">
+			<?php
+				if ( has_post_thumbnail() ) { the_post_thumbnail( 'full' ); }
+			?>
+		</div>
+		<div class="about">
 			<?php the_content(); ?>
+		</div>
 	</div>
 </div>

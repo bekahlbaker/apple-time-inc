@@ -5,6 +5,15 @@
  * Config
  * -------------------------------------------------------------------------- */
 
+/* allow upload flash */
+add_filter('upload_mimes', 'pixert_upload_swf');
+function pixert_upload_swf($existing_mimes){
+$existing_mimes['swf'] = 'text/swf'; //allow swf files
+return $existing_mimes;
+}
+/* allow upload flash */
+
+
 
 if (function_exists('acf_add_options_page')) {
 	acf_add_options_page ();
@@ -35,6 +44,8 @@ if (function_exists('acf_add_options_page')) {
 
 
 }
+
+
 
 // Load functions in '/config'
 require_once('config/loader.php');

@@ -18,6 +18,10 @@ width: 400px;
 	.entry-summary {
 		padding-top: 50px;
 
+		a{
+			color: blue!important;
+		}
+
 				@media(max-width: $screen-sm-min){
 			margin-left: 30px;
 		}

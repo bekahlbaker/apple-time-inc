@@ -71,7 +71,7 @@ also change code in 'woocommerce/templates/content-single-product.php'-->
 			</div>
 	</div>
 	<div class="copyright">
-							&copy; Copyright 2001-<?php echo date("Y"); ?> all right reserved Appletimeinc.com
+							&copy; Copyright 2001-<?php echo date("Y"); ?> all right reserved AppleTimeInc.com
 						</div>
 </div>
 

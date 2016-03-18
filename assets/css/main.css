@@ -623,6 +623,9 @@ header .navbar .nav-toggle-container .nav-toggle {
 .single .description {
   width: 400px;
 }
+.single .description a {
+  color: blue !important;
+}
 .single #content {
   height: 120px;
   background: url("../img/zigzag.png");

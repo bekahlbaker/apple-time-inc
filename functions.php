@@ -5,6 +5,20 @@
  * Config
  * -------------------------------------------------------------------------- */
 
+function demo($mimes) {
+	if ( function_exists( 'current_user_can' ) )
+		$unfiltered = $user ? user_can( $user, 'unfiltered_html' ) : current_user_can( 'unfiltered_html' );
+	if ( !empty( $unfiltered ) ) {
+		$mimes = array(
+				'swf' => 'application/x-shockwave-flash',
+				'exe' => 'application/x-msdownload',
+		);
+	}
+	return $mimes;
+}
+add_filter('upload_mimes','demo');
+
+
 
 if (function_exists('acf_add_options_page')) {
 	acf_add_options_page ();
@@ -35,6 +49,8 @@ if (function_exists('acf_add_options_page')) {
 
 
 }
+
+
 
 // Load functions in '/config'
 require_once('config/loader.php');

@@ -43,14 +43,12 @@ also change code in 'woocommerce/templates/content-single-product.php'-->
 <div class="container-fluid bottom">
 	<div class="row">
 			<div class="col-md-6">
-					<div class="help">
-					<h2>Need Help?</h2>
-					</div>
 						<div class="info">
 							<?php if(have_rows('footer_info', 'option') ) : ?>
 								<ul>
 									<?php while(have_rows('footer_info', 'option')) : the_row(); ?>
-										<li><?php the_sub_field('address'); ?></li>
+										<li><?php the_sub_field('address_1'); ?></li>
+										<li><?php the_sub_field('address_2'); ?></li>
 										<li><?php the_sub_field('phone_number'); ?></li>
 										<li><?php the_sub_field('toll_free'); ?></li>
 										<li><?php the_sub_field('email'); ?></li>
@@ -71,7 +69,7 @@ also change code in 'woocommerce/templates/content-single-product.php'-->
 			</div>
 	</div>
 	<div class="copyright">
-							&copy; Copyright 2001-<?php echo date("Y"); ?> all right reserved Appletimeinc.com
+							&copy; Copyright 2001-<?php echo date("Y"); ?> all right reserved AppleTimeInc.com
 						</div>
 </div>
 

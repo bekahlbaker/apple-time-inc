@@ -1,29 +1,24 @@
 .quote {
-
-.shopping{
-
-}
-
-		#formtable td, th {
+			#formtable td, th {
 			padding: 10px;
 		}
 
-	.vertical-line{
-		margin-left: -20px; 
-		margin-top: 50px;
-		height: 400px;
-		width: 1px;
-	}
+}
 
-	.shopping h1{
+.shopping{
+
+		h1{
 		text-align: center;
 		font-size: 2em;
 		font-weight: 700;
 		margin-top: 170px;
+		padding: 25px 0;
 	}
 
-	.shopping .button{
+		.button{
+			left: 50%!important;
 		@include horizontal-center-element();
 		margin-top: 30px;
 	}
 }
+

@@ -31,6 +31,13 @@
 			}
 
 			.product-categories-button{
+			    background-color: red!important;
+			    padding: 10px 50px;
+			    border: none;
+			    color: white!important;
+			     	&:hover{
+			     		text-decoration: underline;
+			     	}
 				@media(min-width: $screen-md-min){
 					@include horizontal-center-element();
 

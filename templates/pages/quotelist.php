@@ -2,7 +2,7 @@
  <div class="container">
 			<?php the_content(); ?>
 
-	<div class="shopping">		
+<!-- 	<div class="shopping">		
 
 			<div class="col-md-1 hidden-sm hidden-xs">
 <hr class="vertical-line">
@@ -12,6 +12,6 @@
   <a href="shop" class="button">Back to Products</a>
 </div>
 
-</div>
+</div> -->
 	</div>
 </div>

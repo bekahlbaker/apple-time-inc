@@ -412,11 +412,14 @@ header .navbar .nav-toggle-container .nav-toggle {
   font-weight: 700;
 }
 .footer .bottom .info {
-  margin-top: 25px;
+  margin-top: 100px;
   text-align: center;
   color: #FFFFFF;
   font-size: .9em;
   font-weight: 400;
+}
+.footer .bottom .info ul {
+  padding-left: 0;
 }
 .footer .bottom .info li {
   list-style: none;
@@ -477,7 +480,14 @@ header .navbar .nav-toggle-container .nav-toggle {
   }
 }
 .home .product-categories .product-categories-card .product-categories-button {
+  background-color: red !important;
+  padding: 10px 50px;
+  border: none;
+  color: white !important;
   margin-top: 30px;
+}
+.home .product-categories .product-categories-card .product-categories-button:hover {
+  text-decoration: underline;
 }
 @media (min-width: 992px) {
   .home .product-categories .product-categories-card .product-categories-button {
@@ -753,19 +763,16 @@ header .navbar .nav-toggle-container .nav-toggle {
 .quote #formtable td, .quote th {
   padding: 10px;
 }
-.quote .vertical-line {
-  margin-left: -20px;
-  margin-top: 50px;
-  height: 400px;
-  width: 1px;
-}
-.quote .shopping h1 {
+
+.shopping h1 {
   text-align: center;
   font-size: 2em;
   font-weight: 700;
   margin-top: 170px;
+  padding: 25px 0;
 }
-.quote .shopping .button {
+.shopping .button {
+  left: 50% !important;
   left: 50%;
   position: relative;
   -webkit-transform: translateX(-50%);
@@ -777,19 +784,16 @@ header .navbar .nav-toggle-container .nav-toggle {
 .quote #formtable td, .quote th {
   padding: 10px;
 }
-.quote .vertical-line {
-  margin-left: -20px;
-  margin-top: 50px;
-  height: 400px;
-  width: 1px;
-}
-.quote .shopping h1 {
+
+.shopping h1 {
   text-align: center;
   font-size: 2em;
   font-weight: 700;
   margin-top: 170px;
+  padding: 25px 0;
 }
-.quote .shopping .button {
+.shopping .button {
+  left: 50% !important;
   left: 50%;
   position: relative;
   -webkit-transform: translateX(-50%);

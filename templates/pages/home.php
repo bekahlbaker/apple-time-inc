@@ -38,7 +38,7 @@
 			 ?>
 		</div>
 	</div>
-	<div class="container">
+	<!-- <div class="container">
 		<hr>
 	</div>
 	<div class="other-links content-block">
@@ -62,5 +62,5 @@
 				<a href="careers" class="button">Learn More</a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </div>

@@ -6,6 +6,19 @@
 	<div class="container">
 		<hr>
 	</div>
+
+	<div class="container post-area">
+		<div class="col-md-6" style="text-align: center;">
+			<img src="<?php the_field('post_area_image') ?>" alt="" style="max-width: 200px;">
+		</div>
+		<div class="col-md-6">
+			<p><?php the_field('post_area_text') ?></p>
+		</div>
+	</div>
+
+	<div class="container">
+		<hr>
+	</div>
 	<div class="product-categories content-block container">
 		<div class="product-categories-card col-sm-12 col-md-2">
 			<div class="container"><img src="<?php the_field('categories_copy'); ?>"></div>

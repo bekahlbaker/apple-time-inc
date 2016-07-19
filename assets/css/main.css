@@ -402,7 +402,7 @@ header .navbar .nav-toggle-container .nav-toggle {
 .footer .bottom {
   height: auto;
   background-color: #222222;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 .footer .bottom .help {
   margin-top: 80px;
@@ -412,7 +412,7 @@ header .navbar .nav-toggle-container .nav-toggle {
   font-weight: 700;
 }
 .footer .bottom .info {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
   color: #FFFFFF;
   font-size: .9em;
@@ -425,7 +425,7 @@ header .navbar .nav-toggle-container .nav-toggle {
   list-style: none;
 }
 .footer .bottom .menu {
-  margin-top: 60px;
+  margin-top: 0px;
   margin-left: 200px;
 }
 .footer .bottom .menu a {
@@ -453,7 +453,7 @@ header .navbar .nav-toggle-container .nav-toggle {
   border-bottom: 3px solid #FFC010;
 }
 .footer .bottom .copyright {
-  margin-top: 60px;
+  margin-top: 10px;
   text-align: center;
   color: #FFFFFF;
   font-size: .75em;

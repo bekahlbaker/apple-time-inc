@@ -42,7 +42,7 @@ also change code in 'woocommerce/templates/content-single-product.php'-->
 
 <div class="container-fluid bottom">
 	<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-5">
 						<div class="info">
 							<?php if(have_rows('footer_info', 'option') ) : ?>
 								<ul>
@@ -57,7 +57,10 @@ also change code in 'woocommerce/templates/content-single-product.php'-->
 							<?php endif; ?>
 						</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-2 facebook" style="text-align: center;">
+				<a target="_blank" href="https://www.facebook.com/AppleTimeInc"><img src="<?php bloginfo('template_directory'); ?>/assets/img/facebook.png" alt="" style="max-width: 100px; padding-top: 50px;"></a>
+			</div>
+			<div class="col-md-5">
 						<div class="menu">
 							<a href="home"><li>Home</li></a>
 							<a href="my-account"><li>My Account</li></a>

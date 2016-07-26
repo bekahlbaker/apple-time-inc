@@ -1,7 +1,8 @@
 <div class="home">
-	<div class="marquee container">
-		<h6><marquee><?php the_field('marquee'); ?></marquee></h6>
-		</div>
+	<marquee class="marquee container" style="text-align: center;">
+		<img src="<?php the_field('marquee_image') ?>" alt="" style="max-height: 150px; max-width: 150px;">
+		<h6><?php the_field('marquee'); ?></h6>
+		</marquee>
 	</div>
 	<div class="container">
 		<hr>

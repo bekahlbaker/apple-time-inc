@@ -30,7 +30,7 @@
 		<nav class="navbar-fixed-top navbar">
 			<div class="container">
 				<div class="nav-logo pull-left">
-					<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/img/apple-time-logo.png" alt=""></a>
+					<a href="<?php bloginfo('url'); ?>"><img src="<?php the_field('logo') ?>" alt=""></a>
 				</div>
 				<!-- <form class="navbar-form pull-right hidden-xs hidden-sm" role="search">
 			        <div class="form-group">

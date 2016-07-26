@@ -43,22 +43,25 @@ also change code in 'woocommerce/templates/content-single-product.php'-->
 <div class="container-fluid bottom">
 	<div class="row">
 			<div class="col-md-5">
-						<div class="info">
-							<?php if(have_rows('footer_info', 'option') ) : ?>
-								<ul>
-									<?php while(have_rows('footer_info', 'option')) : the_row(); ?>
-										<li><?php the_sub_field('address_1'); ?></li>
-										<li><?php the_sub_field('address_2'); ?></li>
-										<li><?php the_sub_field('phone_number'); ?></li>
-										<li><?php the_sub_field('toll_free'); ?></li>
-										<li><?php the_sub_field('email'); ?></li>
-									<?php endwhile; ?>
-								</ul>
-							<?php endif; ?>
-						</div>
+				<div class="text-box">
+					<?php the_field('text-box') ?>
+				</div>
+				<div class="info">
+					<?php if(have_rows('footer_info', 'option') ) : ?>
+						<ul>
+							<?php while(have_rows('footer_info', 'option')) : the_row(); ?>
+								<li><?php the_sub_field('address_1'); ?></li>
+								<li><?php the_sub_field('address_2'); ?></li>
+								<li><?php the_sub_field('phone_number'); ?></li>
+								<li><?php the_sub_field('toll_free'); ?></li>
+								<li><?php the_sub_field('email'); ?></li>
+							<?php endwhile; ?>
+						</ul>
+					<?php endif; ?>
+				</div>
 			</div>
 			<div class="col-md-2 facebook" style="text-align: center;">
-				<a target="_blank" href="https://www.facebook.com/AppleTimeInc"><img src="<?php bloginfo('template_directory'); ?>/assets/img/facebook.png" alt="" style="max-width: 100px; padding-top: 50px;"></a>
+				<a target="_blank" href="https://www.facebook.com/AppleTimeInc"><img src="/wp-content/uploads/2016/07/FB-f-Logo_blue_530.png" alt="" style="max-width: 150px; padding-top: 50px;"></a>
 			</div>
 			<div class="col-md-5">
 						<div class="menu">

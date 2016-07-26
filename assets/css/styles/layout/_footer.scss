@@ -53,8 +53,14 @@
 				font-weight: 700;
 			}
 
+
+			.text-box{
+				color: $white;
+				font-size: .8em!important;
+				margin-top: 1vh;
+			}
 			.info {
-				margin-top: 50px;
+				margin-top: 5vh;
 				text-align: center;
 				color: $white;
 				font-size: .9em;
@@ -73,7 +79,7 @@
 				a {
 					text-decoration: none!important;
 				}
-				margin-top: 0px;
+				margin-top: 3vh;
 				margin-left: 200px;
 
 				@media(max-width: $screen-md-max){
@@ -106,4 +112,8 @@
 				font-size: .75em;
 			}
 		}
+
+	.facebook{
+		margin-top: 2vh;
+	}
 }

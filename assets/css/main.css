@@ -411,8 +411,13 @@ header .navbar .nav-toggle-container .nav-toggle {
   font-size: 1em;
   font-weight: 700;
 }
+.footer .bottom .text-box {
+  color: #FFFFFF;
+  font-size: 0.8em !important;
+  margin-top: 1vh;
+}
 .footer .bottom .info {
-  margin-top: 50px;
+  margin-top: 5vh;
   text-align: center;
   color: #FFFFFF;
   font-size: .9em;
@@ -425,7 +430,7 @@ header .navbar .nav-toggle-container .nav-toggle {
   list-style: none;
 }
 .footer .bottom .menu {
-  margin-top: 0px;
+  margin-top: 3vh;
   margin-left: 200px;
 }
 .footer .bottom .menu a {
@@ -457,6 +462,9 @@ header .navbar .nav-toggle-container .nav-toggle {
   text-align: center;
   color: #FFFFFF;
   font-size: .75em;
+}
+.footer .facebook {
+  margin-top: 2vh;
 }
 
 .home {
